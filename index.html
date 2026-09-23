@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>For My Cutie ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="hearts" aria-hidden="true"></div>
+
+  <main class="app">
+    <section id="lock" class="screen active">
+      <div class="card lock-card">
+        <div class="lock-icon">♡<span>🔒</span></div>
+        <h1>Unlock Your Surprise</h1>
+        <p>Enter the secret code to begin</p>
+        <div class="dots" id="codeDots"></div>
+        <div class="keypad" id="keypad"></div>
+        <small class="hint">A little secret between us ♡</small>
+      </div>
+    </section>
+
+    <section id="welcome" class="screen">
+      <div class="card center-card">
+        <div class="gift">🎁</div>
+        <h1>Something special<br>is waiting...</h1>
+        <p>Tap the button to open it ✨</p>
+        <button class="primary" data-next="letter">Open It!</button>
+      </div>
+    </section>
+
+    <section id="letter" class="screen">
+      <div class="card letter-card">
+        <div class="topline"><span>Page 1 of 2</span><b>For My Cutie</b></div>
+        <div class="divider"></div>
+        <h2>Happy Birthday, Cutie 🎂</h2>
+        <p>
+          Today is a beautiful reminder of how lucky I am to have someone
+          as amazing as you in my life. You bring so much happiness, warmth,
+          and positivity just by being yourself.
+        </p>
+        <p>
+          Every little moment with you has found a special place in my heart.
+          No matter where life takes us, I’ll always cherish our memories
+          and the smiles we share.
+        </p>
+        <button class="soft" data-next="gallery">Turn the page →</button>
+      </div>
+    </section>
+
+    <section id="gallery" class="screen">
+      <div class="card gallery-card">
+        <div class="section-label">Our little memories ♡</div>
+        <h2>Some moments I want to keep forever</h2>
+        <div class="photo-grid">
+          <figure class="photo tall"><img src="assets/photo1.jpg" alt="A memory together"><figcaption>Us, being us ♡</figcaption></figure>
+          <figure class="photo"><img src="assets/photo2.jpg" alt="A favorite portrait"><figcaption>Your smile.</figcaption></figure>
+          <figure class="photo"><img src="assets/photo3.jpg" alt="A memory together"><figcaption>A moment worth keeping.</figcaption></figure>
+          <figure class="photo"><img src="assets/photo4.jpg" alt="A favorite portrait"><figcaption>Pretty, as always.</figcaption></figure>
+          <figure class="photo wide"><img src="assets/photo5.jpg" alt="A memory together"><figcaption>One of my favorite us photos ✨</figcaption></figure>
+          <figure class="photo"><img src="assets/photo6.jpg" alt="A favorite portrait"><figcaption>And that little look...</figcaption></figure>
+        </div>
+        <button class="primary" data-next="puzzle">One little game →</button>
+      </div>
+    </section>
+
+    <section id="puzzle" class="screen">
+      <div class="card puzzle-card">
+        <h1>Fix the Picture 🧩</h1>
+        <p class="pill">Tap two pieces to swap them!</p>
+        <div id="puzzleGrid" class="puzzle-grid"></div>
+        <div class="swaps">Swaps: <span id="swapCount">0</span></div>
+        <button id="puzzleNext" class="primary hidden">Picture fixed! ♡</button>
+      </div>
+    </section>
+
+    <section id="quiz" class="screen">
+      <div class="progress" id="progress"></div>
+      <div class="card quiz-card">
+        <div class="quiz-accent"></div>
+        <h2 id="question"></h2>
+        <div id="answers" class="answers"></div>
+        <div class="question-count" id="questionCount"></div>
+      </div>
+    </section>
+
+    <section id="complete" class="screen">
+      <div class="confetti"></div>
+      <div class="card center-card">
+        <div class="score-badge">S/S</div>
+        <h1>Quiz Complete :)</h1>
+        <p>You got 5 out of 5 right! 💕</p>
+        <button class="primary" data-next="final">One Last Thing ⭐</button>
+      </div>
+    </section>
+
+    <section id="final" class="screen">
+      <div class="card final-card">
+        <div class="floating-hearts">♡ ♥ ♡</div>
+        <img class="final-photo" src="assets/photo1.jpg" alt="Our favorite memory">
+        <div class="mini-pill">ONCE AGAIN,</div>
+        <h1>Happy Birthday, Cutie</h1>
+        <p>
+          I hope this little surprise made you smile as much as you make me
+          smile every single day. I love you endlessly! 💕
+        </p>
+        <button class="primary" id="relive">↻ Relive it</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
